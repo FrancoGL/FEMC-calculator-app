@@ -1,0 +1,13 @@
+@use "./mixin_theme" as mixin;
+
+.theme-one {
+  @include mixin.theme(1,true);
+}
+
+.theme-two {
+  @include mixin.theme(2, false,true, false);
+}
+
+.theme-three {
+  @include mixin.theme(3, false, false, true);
+}
