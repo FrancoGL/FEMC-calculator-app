@@ -9,3 +9,54 @@
   border-radius: 10px;
   font-size: 2rem;
 }
+
+// Keypad
+.keypad {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.keys-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 3.5rem);
+  grid-template-rows: repeat(5, 3.5rem);
+  grid-template-areas:
+          "k1 k2 k3 k4"
+          "k5 k6 k7 k8"
+          "k9 k10 k11 k12"
+          "k13 k14 k15 k16"
+          "k17 k17 k18 k18";
+  gap: 1rem;
+}
+
+.key {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 2rem;
+
+  &:focus {
+    filter: brightness(125%);
+  }
+}
+
+.del-key, .reset-key, .equal-key {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.reset-key, .equal-key {
+  width: 100%;
+}
+// Class' names List
+$classes: k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18;
+// It adds each class with respectively grid area
+@each $class in $classes {
+  .#{$class} {
+    grid-area: $class;
+  }
+}
