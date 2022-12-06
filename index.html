@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <!--  Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Frontend Mentor | Calculator app</title>
 </head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+<body class="theme-one">
+<header>
+    <h1>calc</h1>
+    <div class="toggle-section">
+        <p class="toggle-title">Theme</p>
+        <ul class="toggle-numbers">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div class="toggle">
+            <input type="radio" name="theme" id="theme-one" class="input-radio">
+            <input type="radio" name="theme" id="theme-two" class="input-radio">
+            <input type="radio" name="theme" id="theme-three" class="input-radio">
+            <span class="key-toggle"></span>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="screen">
+        <span>0</span>
+    </section>
+    <section class="keypad">
+        <div class="keys-container">
+            <button class="key k1">7</button>
+            <button class="key k2">8</button>
+            <button class="key k3">9</button>
+            <button class="key k4 del-key">Del</button>
+            <button class="key k5">4</button>
+            <button class="key k6">5</button>
+            <button class="key k7">6</button>
+            <button class="key k8">+</button>
+            <button class="key k9">1</button>
+            <button class="key k10">2</button>
+            <button class="key k11">3</button>
+            <button class="key k12">-</button>
+            <button class="key k13">.</button>
+            <button class="key k14">0</button>
+            <button class="key k15">/</button>
+            <button class="key k16">x</button>
+            <button class="key k17 reset-key">Reset</button>
+            <button class="key k18 equal-key">=</button>
+        </div>
+    </section>
+</main>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</footer>
 </body>
+<script src="./js/index.js" type="module"></script>
 </html>

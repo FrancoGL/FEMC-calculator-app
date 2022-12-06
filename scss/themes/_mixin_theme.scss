@@ -1,0 +1,69 @@
+@use "./theme-colors" as themes;
+
+$theme-color: themes.$theme-one, themes.$theme-two, themes.$theme-three;
+
+@mixin theme($theme-number, $is-first-theme: false, $is-second-theme: false, $is-third-theme: false) {
+
+  // Body
+  background-color: map-get(nth($theme-color, $theme-number), "main-background");
+  // Change font's color depending on $is-second-theme or $is-third-theme
+  @if $is-third-theme {
+    color: map-get(nth($theme-color, $theme-number), "default-three");
+  } @else if $is-second-theme {
+    color: map-get(nth($theme-color, $theme-number), "default-one");
+  } @else {
+    color: map-get(nth($theme-color, $theme-number), "default-two");
+  }
+
+  // Toggle
+  .toggle {
+    background-color: map-get(nth($theme-color, $theme-number), "toggle-keypad-background");
+  }
+  .key-toggle {
+    background-color: map-get(nth($theme-color, $theme-number), "key-toggle-background");
+  }
+  // Screen
+  .screen {
+    background-color: map-get(nth($theme-color, $theme-number), "screen-background");
+
+    @if $is-first-theme {
+      color: map-get(nth($theme-color, $theme-number), "default-two");
+    } @else if $is-second-theme {
+      color: map-get(nth($theme-color, $theme-number), "default-one");
+    } @else {
+      color: map-get(nth($theme-color, $theme-number), "default-three");
+    }
+  }
+  // Keypad
+  .keypad {
+    background-color: map-get(nth($theme-color, $theme-number), "toggle-keypad-background");
+    // Keys
+    .key {
+      background-color: map-get(nth($theme-color, $theme-number), "key-background-two");
+      border-bottom: 4px solid map-get(nth($theme-color, $theme-number), "key-shadow-third");
+
+      @if $is-first-theme {
+        color: map-get(nth($theme-color, $theme-number), "default-one");
+      } @else if $is-third-theme {
+        color: map-get(nth($theme-color, $theme-number), "default-three");
+      }
+    }
+
+    .del-key, .reset-key {
+      background-color: map-get(nth($theme-color, $theme-number), "key-background");
+      color: map-get(nth($theme-color, $theme-number), "default-two");
+      border-bottom: 4px solid map-get(nth($theme-color, $theme-number), "key-shadow");
+    }
+
+    .equal-key {
+      background-color: map-get(nth($theme-color, $theme-number), "key-toggle-background");
+      border-bottom: 4px solid map-get(nth($theme-color, $theme-number), "key-shadow-two");
+
+      @if $is-third-theme {
+        color: map-get(nth($theme-color, $theme-number), "default-one");
+      } @else {
+        color: map-get(nth($theme-color, $theme-number), "default-two");
+      }
+    }
+  }
+}
