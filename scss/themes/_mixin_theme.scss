@@ -33,7 +33,7 @@ $theme-color: themes.$theme-one, themes.$theme-two, themes.$theme-three;
     // Keys
     .key {
       background-color: map-get(nth($theme-color, $theme-number), "key-background-two");
-      border: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow-third");
+      border-bottom: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow-third");
 
       @if $is-first-theme {
         color: map-get(nth($theme-color, $theme-number), "default-one");
@@ -42,12 +42,12 @@ $theme-color: themes.$theme-one, themes.$theme-two, themes.$theme-three;
       &.del-key, .reset-key {
         background-color: map-get(nth($theme-color, $theme-number), "key-background");
         color: map-get(nth($theme-color, $theme-number), "default-two");
-        border: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow");
+        border-bottom: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow");
       }
 
       &.equal-key {
         background-color: map-get(nth($theme-color, $theme-number), "key-toggle-background");
-        border: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow-two");
+        border-bottom: 5px solid map-get(nth($theme-color, $theme-number), "key-shadow-two");
 
         @if $is-third-theme {
           color: map-get(nth($theme-color, $theme-number), "default-one");
