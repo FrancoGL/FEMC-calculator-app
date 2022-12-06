@@ -18,10 +18,9 @@ $theme-color: themes.$theme-one, themes.$theme-two, themes.$theme-three;
   // Toggle
   .toggle {
     background-color: map-get(nth($theme-color, $theme-number), "toggle-keypad-background");
-
-    .key-toggle {
-      background-color: map-get(nth($theme-color, $theme-number), "key-toggle-background");
-    }
+  }
+  .key-toggle {
+    background-color: map-get(nth($theme-color, $theme-number), "key-toggle-background");
   }
   // Screen
   .screen {
