@@ -60,3 +60,37 @@ $classes: k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18;
     grid-area: $class;
   }
 }
+
+@media screen and (min-width: 768px) {
+
+  // Screen
+  .screen {
+    height: 6rem;
+  }
+
+  // Keypad
+  .keys-container {
+    grid-template-columns: repeat(4, 4.5rem);
+    gap: 1.2rem;
+  }
+
+  .key:not(.reset-key, .equal-key) {
+    width: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .keys-container {
+    grid-template-columns: repeat(4, 5.5rem);
+    gap: 1.4rem;
+  }
+
+  .key:not(.reset-key, .equal-key) {
+    width: 5.5rem;
+    height: 3.5rem;
+  }
+
+  .key:hover {
+    filter: brightness(125%);
+  }
+}
