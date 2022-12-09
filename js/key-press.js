@@ -53,15 +53,28 @@ $keypad.addEventListener("click", (e) => {
     }
 
     if ($key.matches(".decimal-key")) {
-        console.log("Operator");
+        if (calculator.secondInput) {
+            calculator.displayValue += $key.textContent;
+            calculator.isDecimalPress = true;
+            updateScreenValue();
+        }
     }
 
     if ($key.matches(".del-key")) {
-        console.log("Del");
+        if (calculator.displayValue.length === 1) {
+            calculator.displayValue = "0";
+            updateScreenValue();
+            calculator.secondInput = false;
+        } else {
+            calculator.displayValue = calculator.displayValue.substring(0,calculator.displayValue.length-1);
+            updateScreenValue();
+        }
     }
 
     if ($key.matches(".reset-key")) {
-        console.log("Reset");
+        calculator.displayValue = "0";
+        calculator.secondInput = false;
+        updateScreenValue();
     }
 
     if ($key.matches(".equal-key")) {
