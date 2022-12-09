@@ -1,2 +1,2 @@
-import "./theme-select.js";
-import "./key-press.js";
+import "./theme/theme-select.js";
+import "./utils/keys-actions.js";
