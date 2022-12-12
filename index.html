@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <!--  Icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Normalize -->
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Frontend Mentor | Calculator app</title>
-</head>
-<body class="theme-one">
-<div class="container">
-    <header>
+  </head>
+  <body class="theme-one">
+    <div class="container">
+      <header>
         <h1>calc</h1>
         <div class="toggle-section">
-            <p class="toggle-title">Theme</p>
-            <ul class="toggle-numbers">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-            <div class="toggle">
-                <input type="radio" name="theme" id="theme-one" class="input-radio">
-                <input type="radio" name="theme" id="theme-two" class="input-radio">
-                <input type="radio" name="theme" id="theme-three" class="input-radio">
-                <span class="key-toggle"></span>
-            </div>
+          <p class="toggle-title">Theme</p>
+          <ul class="toggle-numbers">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <div class="toggle">
+            <input
+              type="radio"
+              name="theme"
+              id="theme-one"
+              class="input-radio"
+            />
+            <input
+              type="radio"
+              name="theme"
+              id="theme-two"
+              class="input-radio"
+            />
+            <input
+              type="radio"
+              name="theme"
+              id="theme-three"
+              class="input-radio"
+            />
+            <span class="key-toggle"></span>
+          </div>
         </div>
-    </header>
-    <main>
+      </header>
+      <main>
         <section class="screen">
-            <span id="screen-value"></span>
+          <span id="screen-value"></span>
         </section>
         <section class="keypad">
-            <div class="keys-container">
-                <button class="key number k1">7</button>
-                <button class="key number k2">8</button>
-                <button class="key number k3">9</button>
-                <button class="key k4 del-key">Del</button>
-                <button class="key number k5">4</button>
-                <button class="key number k6">5</button>
-                <button class="key number k7">6</button>
-                <button class="key operator k8">+</button>
-                <button class="key number k9">1</button>
-                <button class="key number k10">2</button>
-                <button class="key number k11">3</button>
-                <button class="key operator k12">-</button>
-                <button class="key decimal-key k13">.</button>
-                <button class="key number k14">0</button>
-                <button class="key operator k15">/</button>
-                <button class="key operator k16">x</button>
-                <button class="key k17 reset-key">Reset</button>
-                <button class="key k18 equal-key">=</button>
-            </div>
+          <div class="keys-container">
+            <button class="key number k1">7</button>
+            <button class="key number k2">8</button>
+            <button class="key number k3">9</button>
+            <button class="key k4 del-key">Del</button>
+            <button class="key number k5">4</button>
+            <button class="key number k6">5</button>
+            <button class="key number k7">6</button>
+            <button class="key operator k8">+</button>
+            <button class="key number k9">1</button>
+            <button class="key number k10">2</button>
+            <button class="key number k11">3</button>
+            <button class="key operator k12">-</button>
+            <button class="key decimal-key k13">.</button>
+            <button class="key number k14">0</button>
+            <button class="key operator k15">/</button>
+            <button class="key operator k16">x</button>
+            <button class="key k17 reset-key">Reset</button>
+            <button class="key k18 equal-key">=</button>
+          </div>
         </section>
-    </main>
-    <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/FrancoGL">FrancoGL</a>.
-    </footer>
-</div>
-</body>
-<script src="./js/index.js" type="module"></script>
+      </main>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/FrancoGL">FrancoGL</a>.
+      </footer>
+    </div>
+  </body>
+  <script src="./js/index.js" type="module"></script>
 </html>
