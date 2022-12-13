@@ -159,7 +159,7 @@ header {
   position: relative;
   grid-column: 2/3;
   grid-row: 2/3;
-  padding: 0.3rem;
+  padding: 0.35rem;
   width: 4.5rem;
   border-radius: 15px;
 }
@@ -172,7 +172,7 @@ header {
 .key-toggle {
   position: absolute;
   display: block;
-  top: 0.25rem;
+  top: 0.35rem;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
