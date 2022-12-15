@@ -21,8 +21,8 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-i9wdp7v9x1)
-- Live Site URL: [Live Site with Vercel](https://francogl.github.io/FEMC-ntf-preview-card-component)
+- Solution URL: [Frontend Mentor](#)
+- Live Site URL: [Live Site with GitHub Pages](https://francogl.github.io/FEMC-calculator-app/)
 
 ## Built with
 
