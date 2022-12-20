@@ -39,8 +39,10 @@ header {
   border-radius: 15px;
 }
 
-.toggle input[type="radio"] {
+.toggle .input-radio {
+  display: inline-block;
   width: 1.25rem;
+  height: 1.25rem;
   opacity: 0;
 }
 
