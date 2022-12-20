@@ -99,6 +99,8 @@
 body {
   font-family: "League Spartan", sans-serif;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -111,7 +113,6 @@ li {
 
 .container {
   width: 19.438rem;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
